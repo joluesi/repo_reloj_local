@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="UTF-8">
+	  <link rel="shortcut icon" type="image/x-icon" href="img/logo.gif">
+	  <title>Reloj Digital</title>
+	  <link rel="stylesheet" href="css/bootstrap.css">
+	  <link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="container text-center">
+			<p id="hora">18:27</p>
+			<span id="dia">Martes ,</span><span id="fecha">16 de Mayo</span>
+			<div id="otros">
+				
+			</div>
+			<button id="seleccionar" class="btn btn-success" type="button" data-toggle="modal" data-target="#myModal">Seleccionar</button>
+			<!-- Modal -->
+			<div id="myModal" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+
+			    <!-- Modal content-->
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal">&times;</button>
+			        <h4 class="modal-title">Selecciona una Región</h4>
+			      </div>
+			      <div class="modal-body text-center">
+			        <p><input class="region" type="checkbox" value="0">México DC</p>
+			      	<p id="sao-paulo"><input class="region" type="checkbox" value="1">Sao Paulo</p> 
+			      	<p id="washington-dc"><input class="region" type="checkbox" value="2">Washington DC</p>
+			      	<p id="madrid"><input class="region" type="checkbox" value="3">Madrid</p>
+			      	
+			      </div>
+			   	 </div>
+			  </div>
+			</div>
+		</div><!--container end-->
+		<script src="js/jquery-1.12.3.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
